@@ -2,6 +2,8 @@
 
 This project is a ready-to-use template for developing Telegram bots in Go. The template includes a basic project structure, configured components, and ready-to-use functionality.
 
+![Screenshot](https://i.postimg.cc/rwC66XK3/Screenshot-2025-04-08-215558.png)
+
 ## Technologies Used
 
 - **[telebot v4](https://github.com/tucnak/telebot)** - Elegant library for creating Telegram bots
