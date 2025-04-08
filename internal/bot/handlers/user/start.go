@@ -4,6 +4,8 @@ import (
 	// "telebot-template/internal/database/models"
 	// r "telebot-template/internal/database/repositories"
 
+	"telebot-template/internal/bot/keyboards"
+
 	tele "gopkg.in/telebot.v4"
 )
 
@@ -21,5 +23,7 @@ func handleStart(c tele.Context) error {
 	// 	return err
 	// }
 
-	return c.Send("Start")
+	kb := keyboards.GetStartKeyboard()
+
+	return c.Send("Start", kb)
 }

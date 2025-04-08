@@ -30,6 +30,18 @@ This project is a ready-to-use template for developing Telegram bots in Go. The 
 - Separate handlers for users and administrators
 - Role-based access control system
 
+### Keyboards
+
+- Modular keyboard system with separate components
+- Ready-to-use keyboard templates for common scenarios
+- Support for both reply and inline keyboards
+
+### Command Handlers
+
+- Pre-configured start and help commands
+- Multi-page help system with navigation
+- Separate handler groups for user and admin commands
+
 ### Database
 
 - SQLite with GORM
@@ -57,6 +69,7 @@ This project is a ready-to-use template for developing Telegram bots in Go. The 
 │   │   ├── handlers/     # Command handlers
 │   │   │   ├── admin/    # Handlers for administrators
 │   │   │   └── user/     # Handlers for users
+│   │   ├── keyboards/    # Keyboard layouts and components
 │   │   └── middleware/   # Middleware
 │   ├── database/
 │   │   ├── database.go   # Database initialization
@@ -68,5 +81,3 @@ This project is a ready-to-use template for developing Telegram bots in Go. The 
 ├── go.mod                # Project dependencies
 └── go.sum                # Dependency checksums
 ```
-
-_readme by claude-3.7-Sonnet <3_
