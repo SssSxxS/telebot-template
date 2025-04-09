@@ -36,11 +36,11 @@ func UserTracker() tele.MiddlewareFunc {
 
 			switch err {
 			case nil: // user exists
-				if err = r.UserRepo.Update(existingUser.ID, newUser); err != nil {
-					return err
-				}
 				if existingUser.Status < 0 { // user is banned
 					return nil
+				}
+				if err = r.UserRepo.Update(existingUser.ID, newUser); err != nil {
+					return err
 				}
 
 			case gorm.ErrRecordNotFound: // user does not exist
